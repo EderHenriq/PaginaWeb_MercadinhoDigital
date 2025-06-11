@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merca Edinho Digital - Bem-vindo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="form-container">
+    <div id="login-form">
+      <h1>Merca Edinho Digital </h1>
+      <p>Faça login para continuar</p>
+      <input type="text" id="login-username" placeholder="Usuário" required />
+      <input type="password" id="login-password" placeholder="Senha" required />
+      <button onclick="login()">Entrar</button>
+      <a href="#" id="show-register">Não tem uma conta? Cadastre-se</a>
+    </div>
+
+    <div id="register-form" class="hidden">
+      <h1>Crie sua Conta</h1>
+      <p>É rápido e fácil</p>
+      <input type="text" id="register-username" placeholder="Escolha um usuário" required />
+      <input type="password" id="register-password" placeholder="Crie uma senha" required />
+      <button onclick="registrar()">Cadastrar</button>
+      <a href="#" id="show-login">Já tem uma conta? Faça login</a>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
